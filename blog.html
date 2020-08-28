@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Name of website</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>GetWordMeaning</h1>
+      </div>
+      <nav id="navbar" class="hidden">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <div class="btn" onclick="toggle()"> <i class="fa fa-bars" aria-hidden="true"></i> </div>
+    </header>
+    <div class="navigation">
+      <ul>
+        <li><a href="#">English to Bangla</a></li>
+        <li><a href="#">English to Hindi</a></li>
+        <li><a href="#">English to Tamil</a></li>
+        <li><a href="#">Bangla to Bangla</a></li>
+      </ul>
+    </div>
+    <div class="word-search">
+      <form class="" action="index.html" method="post">
+        <input type="text" name="search" placeholder="Type Word">
+        <button type="submit" name="submit">Search</button>
+      </form>
+
+    </div>
+
+    <script type="text/javascript">
+      function toggle() {
+          var test = document.getElementById("navbar");
+          if (test.className == "hidden") {
+            test.className = "show";
+          } else {
+            test.className = "hidden";
+          }
+      }
+    </script>
+  </body>
+</html>
